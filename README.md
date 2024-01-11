@@ -35,5 +35,5 @@ Set value of the *HOST* environment variable equals the host of the Olympe Docs 
 node parser --rootTags rootTag1,rootTag2 --projects projectName1,projectName2 ---outPaths outPutDir1,outputDir2
 ```
 
-rootTags and --projects are required
+rootTags and --projects are required. \
 if you don't pass --outPaths generated docs files will be stored in the current parser directory
