@@ -1,12 +1,39 @@
-# starter-micro-api
+# **Documentation parser script**
 
-This is the simplest possible nodejs api using the base http library that responds to any request with: 
+## Table of Contents
+
+1. Prerequisites
+2. Installation
+3. Usage
+
+## 1. Prerequisites
+
+Before you begin, ensure you have the following:
+
+- Node.js (v18 or newer)
+- The Olympe Documentation Service Application is running
+
+## 2. Instalation
+
+### Step 1: Install Dependencies
+
+```bash
+npm install
 ```
-Yo!
+
+### Step 2: Set Environment Variables
+
+```bash
+cp .env_example .env 
 ```
 
-## Deploy in under 10 seconds
+Set value of the *HOST* environment variable equals the host of the Olympe Docs Service app in .env file 
 
-[![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/)
-- Sets up instant continuous deployment on `git push`
-- Realtime backend logs and API request monitoring
+## 3. Usage
+
+```bash
+node parser --rootTags rootTag1,rootTag2 --projects projectName1,projectName2 ---outPaths outPutDir1,outputDir2
+```
+
+rootTags and --projects are required
+if you don't pass --outPaths generated docs files will be stored in the current parser directory
