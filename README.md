@@ -27,13 +27,13 @@ npm install
 cp .env_example .env 
 ```
 
-Set value of the *HOST* environment variable equals the host of the Olympe Docs Service app in .env file 
-
+ In the .env file, set the *HOST* environment variable to the *host* of the Olympe Docs Service application
 ## 3. Usage
 
 ```bash
 node parser --rootTags rootTag1,rootTag2 --projects projectName1,projectName2 ---outPaths outPutDir1,outputDir2
 ```
 
-rootTags and --projects are required \
-if you don't pass --outPaths generated docs files will be stored in the current parser directory
+The rootTags and --projects parameters are mandatory \
+The number of root tags and projects must be the same \
+If you do not pass the -outPaths parameter, the generated docs files will be stored in the current parser directory
